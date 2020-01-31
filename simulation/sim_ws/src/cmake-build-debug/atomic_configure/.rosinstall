@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/devel/setup.sh

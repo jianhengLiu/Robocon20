@@ -1,0 +1,4 @@
+<launch>
+    <node name="omniwheel" pkg = "vrep_pkg" type = "omniwheel" output="screen">
+    </node>
+</launch>

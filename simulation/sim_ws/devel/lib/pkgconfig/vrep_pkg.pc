@@ -1,0 +1,8 @@
+prefix=/home/chrisliu/Robocon20/simulation/sim_ws/devel
+
+Name: vrep_pkg
+Description: Description of vrep_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

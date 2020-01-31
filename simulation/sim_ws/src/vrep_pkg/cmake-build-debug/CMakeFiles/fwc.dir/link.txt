@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libfwc.so -o devel/lib/libfwc.so CMakeFiles/fwc.dir/src/FourWheelControl.cpp.o 

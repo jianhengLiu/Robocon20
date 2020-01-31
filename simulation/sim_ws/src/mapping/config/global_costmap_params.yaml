@@ -1,0 +1,19 @@
+global_costmap:
+   global_frame: map
+   robot_base_frame: base_link
+   update_frequency: 1.0
+   publish_frequency: 0.5
+   static_map: true
+
+   transform_tolerance: 0.5
+
+   #plugins
+   #costmap由很多图层组成master layer即最终决定global planner路径的图层（地图）
+   #以下的plugins即要添加的图层
+   #实际行为路径以local plnner的路径，而global planner的路径则是一个大体的方向
+   #可以看到local_costmap中没有膨胀层(inflation_layer)因为local planner会根据传感器信息做规划
+   #规划中就保证了机器人不会碰到障碍物，但为了安全会让local path尽量贴近global path
+   plugins:
+      - {name: static_layer,            type: "costmap_2d::StaticLayer"}
+      - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+      - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
