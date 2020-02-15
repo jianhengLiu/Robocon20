@@ -8,10 +8,10 @@ project(keyboard)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
-  rospy
-  std_msgs
-)
+        geometry_msgs
+        rospy
+        std_msgs
+        )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -103,21 +103,26 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES keyboard
-#  CATKIN_DEPENDS geometry_msgs rospy std_msgs
-#  DEPENDS system_lib
+        #  INCLUDE_DIRS include
+        #  LIBRARIES keyboard
+        #  CATKIN_DEPENDS geometry_msgs rospy std_msgs
+        #  DEPENDS system_lib
 )
 
 ###########
 ## Build ##
 ###########
+# 添加Python.h头文件路径
+include_directories(/usr/include/python2.7)
+
+# 添加python动态链接库文件目录
+link_directories(/usr/lib/python2.7/config-x86_64-  linux-gnu)
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
-  ${catkin_INCLUDE_DIRS}
+        # include
+        ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -159,12 +164,22 @@ include_directories(
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
- 
 
- install(PROGRAMS
-   src/keyboard_steeringwheel.py
-   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
- )
+
+install(PROGRAMS
+        src/keyboard_steeringwheel.py
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+        )
+
+install(PROGRAMS
+        src/keyboard_vehicle.py
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+        )
+
+install(PROGRAMS
+        src/keyboardSendPosition.py
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+        )
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
 # install(TARGETS ${PROJECT_NAME}_node

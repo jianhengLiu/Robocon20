@@ -1,4 +1,6 @@
 <launch>
     <node name="omniwheel" pkg = "vrep_pkg" type = "omniwheel" output="screen">
     </node>
+    <node name="keyboard_vehicle" pkg = "keyboard" type = "keyboard_vehicle.py" output="screen">
+    </node>
 </launch>

@@ -1,0 +1,8 @@
+prefix=/home/chrisliu/Robocon20/simulation/sim_ws/devel
+
+Name: cartographer_ros_msgs
+Description: Description of cartographer_ros_msgs
+Version: 1.0.0
+Cflags: -I/home/chrisliu/Robocon20/simulation/sim_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

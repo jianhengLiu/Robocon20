@@ -1,5 +1,5 @@
 <launch>
-    <node name="keyboard_steeringwheel" pkg = "keyboard" type = "keyboard_steeringwheel.py" output="screen">
+    <node name="keyboard_vehicle" pkg = "keyboard" type = "keyboard_vehicle.py" output="screen">
     </node>
     <node name="steerwheel" pkg = "vrep_pkg" type = "steerwheel" output="screen">
     </node>

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../vrep_pkg/include/steeringwheel.h
+
+/home/chrisliu/Robocon20/simulation/sim_ws/src/vrep_pkg/src/steeringwheel.cpp
+steeringwheel.h
+/home/chrisliu/Robocon20/simulation/sim_ws/src/vrep_pkg/src/steeringwheel.h
+algorithm
+-
+math.h
+-
+

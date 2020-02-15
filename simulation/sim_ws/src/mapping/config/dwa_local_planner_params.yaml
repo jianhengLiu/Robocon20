@@ -1,0 +1,31 @@
+DWALocalPlannerROS:
+  # Robot
+
+  acc_lim_x: 2.5
+  acc_lim_y: 2.5
+  acc_lim_th: 3.2
+  max_trans_vel: 0.55 #最大线速度
+  min_trans_vel: 0.1 #最小线速度
+  max_vel_x: 0.55
+  min_vel_x: 0
+  max_vel_y: 0.1
+  min_vel_y: -0.1
+  max_rot_vel: 1.0 #rad/s
+  min_rot_vel: 0.4
+
+  # GoalTolerance
+
+  xy_goal_tolerance: 0.10
+  yaw_goal_tolerance: 0.05
+  latch_xy_goal_tolerance: false #一般都为false，如果为true是什么意思呢？就是当进入xy_goal_tolerance范围内后会设置一个锁，此后即使在旋转调整yaw的过程中跳出xy_goal_tolerance，也不会进行xy上的调整。
+
+  #Forward simulation
+  #default
+
+  #Trajectory Scoring
+  #Rest of them stay default
+  publish_cost_grid: true #发布可视化的可信度点云信息
+
+  #Oscillation Prevention Parameters
+  #震荡抑制参数
+  #default

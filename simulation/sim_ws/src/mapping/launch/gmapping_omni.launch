@@ -6,18 +6,17 @@
 
     <param name="use_sim_time" value="false"/>
 
-    <node name="omniwheel" pkg="vrep_pkg" type="omniwheel" output="screen">
+    <node name="omniwheel" pkg="vrep_pkg" type="omniwheel">
     </node>
 
     <node name="keyboard_steeringwheel" pkg = "keyboard" type = "keyboard_steeringwheel.py" output="screen">
     </node>
 
     <!--- Run AMCL -->
-    <include file="$(find amcl)/examples/amcl_omni.launch"/>
+    <!---<include file="$(find amcl)/examples/amcl_omni.launch"/>-->
 
     <!-- 启动slam_gmapping节点 -->
-    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"
-          clear_params="true">   <!-- clear_params: Delete all parameters in the node's private namespace before launch -->
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" clear_params="true">   <!-- clear_params: Delete all parameters in the node's private namespace before launch -->
 
         　　　　  <!-- Parameters used by gmapping wrapper -->
         <param name="base_frame" value="$(arg base_frame)"/>   <!-- The frame attached to the mobile base -->

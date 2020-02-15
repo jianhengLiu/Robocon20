@@ -16,7 +16,7 @@ ros::Publisher M1;
 ros::Publisher M2;
 ros::Publisher M3;
 
-float robot_radius=0.14;
+float robot_radius=0.205;
 
 void keyboard_callback(const geometry_msgs::Twist::ConstPtr &keyboard)
 {

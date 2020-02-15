@@ -13,8 +13,6 @@ ros/ros.h
 /home/chrisliu/Robocon20/simulation/sim_ws/src/vrep_pkg/src/ros/ros.h
 iostream
 -
-algorithm
--
 steeringwheel.h
 /home/chrisliu/Robocon20/simulation/sim_ws/src/vrep_pkg/src/steeringwheel.h
 std_msgs/Float32.h
@@ -30,8 +28,6 @@ message_filters/subscriber.h
 message_filters/synchronizer.h
 -
 message_filters/sync_policies/approximate_time.h
--
-math.h
 -
 
 /opt/ros/kinetic/include/geometry_msgs/Twist.h
