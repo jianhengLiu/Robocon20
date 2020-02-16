@@ -1,5 +1,3 @@
 build/
-/devel/
-.idea/
-.catkin_workspace/
+devel/
 cmake-build-debug/
