@@ -1,0 +1,15 @@
+<launch>
+
+    <node name="omniwheel" pkg="vrep_pkg" type="omniwheel" output="screen">
+    </node>
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find mapping)/launch/move_base.launch"/>
+
+    <!-- 运行rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mapping)/rviz/pathplanning.rviz"/>
+
+    <node name="keyboardSendPosition" pkg = "keyboard" type = "keyboardSendPosition.py" output="screen">
+    </node>
+</launch>
+
