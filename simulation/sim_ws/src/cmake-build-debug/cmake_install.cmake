@@ -135,6 +135,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/vrep_pkg/cmake_install.cmake")
   include("/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/keyboard/cmake_install.cmake")
   include("/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/mapping/cmake_install.cmake")
+  include("/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/path_planning/cmake_install.cmake")
+  include("/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/trajectory_planning/cmake_install.cmake")
 
 endif()
 

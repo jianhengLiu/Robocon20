@@ -1,0 +1,6 @@
+<library path="lib/librelaxed_astar_lib">
+<!--    上面这个路径是catkin_make生成的库文件-->
+    <class name="RAstar_planner/RAstarPlannerROS" type="RAstar_planner::RAstarPlannerROS" base_class_type="nav_core::BaseGlobalPlanner">
+        <description>This is Relaxed Astar global planner plugin by iroboapp project.</description>
+    </class>
+</library>

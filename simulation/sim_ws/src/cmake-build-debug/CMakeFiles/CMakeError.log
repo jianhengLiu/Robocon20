@@ -1,24 +1,24 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_357aa/fast && /usr/bin/make -f CMakeFiles/cmTC_357aa.dir/build.make CMakeFiles/cmTC_357aa.dir/build
+Run Build Command(s):/usr/bin/make cmTC_52fa1/fast && /usr/bin/make -f CMakeFiles/cmTC_52fa1.dir/build.make CMakeFiles/cmTC_52fa1.dir/build
 make[1]: Entering directory '/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_357aa.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_357aa.dir/src.c.o   -c /home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_357aa
-/home/chrisliu/software/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_357aa.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_357aa.dir/src.c.o  -o cmTC_357aa 
-CMakeFiles/cmTC_357aa.dir/src.c.o：在函数‘main’中：
+Building C object CMakeFiles/cmTC_52fa1.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_52fa1.dir/src.c.o   -c /home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_52fa1
+/home/chrisliu/software/clion-2020.1.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52fa1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_52fa1.dir/src.c.o  -o cmTC_52fa1 
+CMakeFiles/cmTC_52fa1.dir/src.c.o：在函数‘main’中：
 src.c:(.text+0x3c)：对‘pthread_create’未定义的引用
 src.c:(.text+0x48)：对‘pthread_detach’未定义的引用
 src.c:(.text+0x59)：对‘pthread_join’未定义的引用
 src.c:(.text+0x6d)：对‘pthread_atfork’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_357aa.dir/build.make:86: recipe for target 'cmTC_357aa' failed
-make[1]: *** [cmTC_357aa] Error 1
+CMakeFiles/cmTC_52fa1.dir/build.make:86: recipe for target 'cmTC_52fa1' failed
+make[1]: *** [cmTC_52fa1] Error 1
 make[1]: Leaving directory '/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_357aa/fast' failed
-make: *** [cmTC_357aa/fast] Error 2
+Makefile:121: recipe for target 'cmTC_52fa1/fast' failed
+make: *** [cmTC_52fa1/fast] Error 2
 
 
 Source file was:
@@ -44,20 +44,20 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3f94d/fast && /usr/bin/make -f CMakeFiles/cmTC_3f94d.dir/build.make CMakeFiles/cmTC_3f94d.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f63c9/fast && /usr/bin/make -f CMakeFiles/cmTC_f63c9.dir/build.make CMakeFiles/cmTC_f63c9.dir/build
 make[1]: Entering directory '/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3f94d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3f94d.dir/CheckFunctionExists.c.o   -c /home/chrisliu/software/clion-2019.2.1/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
-Linking C executable cmTC_3f94d
-/home/chrisliu/software/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f94d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3f94d.dir/CheckFunctionExists.c.o  -o cmTC_3f94d -lpthreads 
+Building C object CMakeFiles/cmTC_f63c9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f63c9.dir/CheckFunctionExists.c.o   -c /home/chrisliu/software/clion-2020.1.1/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f63c9
+/home/chrisliu/software/clion-2020.1.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f63c9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_f63c9.dir/CheckFunctionExists.c.o  -o cmTC_f63c9  -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_3f94d.dir/build.make:86: recipe for target 'cmTC_3f94d' failed
-make[1]: *** [cmTC_3f94d] Error 1
+CMakeFiles/cmTC_f63c9.dir/build.make:86: recipe for target 'cmTC_f63c9' failed
+make[1]: *** [cmTC_f63c9] Error 1
 make[1]: Leaving directory '/home/chrisliu/Robocon20/simulation/sim_ws/src/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_3f94d/fast' failed
-make: *** [cmTC_3f94d/fast] Error 2
+Makefile:121: recipe for target 'cmTC_f63c9/fast' failed
+make: *** [cmTC_f63c9/fast] Error 2
 
 
 
